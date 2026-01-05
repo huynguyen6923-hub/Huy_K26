@@ -151,8 +151,8 @@ Motors & Servos
 ### Pin Assignments (Arduino)
 
 **Motor PWM Pins:**
-- FL: Pin 2, ML: Pin 3, BL: Pin 4
-- FR: Pin 5, MR: Pin 6, BR: Pin 7
+- FL: Pin 13, ML: Pin 11, BL: Pin 9
+- FR: Pin 12, MR: Pin 10, BR: Pin 8
 
 **Direction Control Pins:**
 - Each motor has IN1 and IN2 pins for direction control
