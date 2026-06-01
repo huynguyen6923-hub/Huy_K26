@@ -457,12 +457,12 @@ Three L298N H-bridge boards, one per axle. On each board: **Out1 (ENA) = left mo
 
 | Label | PWM Pin | IN1 Pin | IN2 Pin | L298 Board |
 |-------|---------|---------|---------|------------|
-| FL | 12 | 24 | 25 | Front (Out1, ENA) |
-| FR | 11 | 26 | 27 | Front (Out2, ENB) |
-| ML | 10 | 28 | 29 | Middle (Out1, ENA) |
-| MR |  9 | 30 | 31 | Middle (Out2, ENB) |
-| BL |  8 | 50 | 51 | Back (Out1, ENA) |
-| BR |  7 | 52 | 53 | Back (Out2, ENB) |
+| FL | 12 | 24      | 25      | Front (Out1, ENA) |
+| FR | 11 | 27      | 26      | Front (Out2, ENB) |
+| ML | 10 | 30      | 31      | Middle (Out1, ENA) |
+| MR |  9 | 33      | 32      | Middle (Out2, ENB) |
+| BL |  8 | 50      | 51      | Back (Out1, ENA) |
+| BR |  7 | 53      | 52      | Back (Out2, ENB) |
 
 ### I2C for PCA9685 Servo Driver
 - **SDA**: Pin 20
