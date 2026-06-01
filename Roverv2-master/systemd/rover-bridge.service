@@ -1,0 +1,18 @@
+[Unit]
+Description=Rover MQTT-to-Serial bridge (HiveMQ -> Arduino)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=aios
+Group=aios
+WorkingDirectory=/home/aios
+ExecStart=/usr/bin/python3 /home/aios/pi_mqtt_bridge.py
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

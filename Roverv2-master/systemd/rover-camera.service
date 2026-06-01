@@ -1,0 +1,21 @@
+[Unit]
+Description=Rover MJPEG webcam stream (raw mode)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=aios
+Group=aios
+WorkingDirectory=/home/aios
+# Default: raw stream only.
+# To enable a vision mode, edit this line, e.g.:
+#   ExecStart=/usr/bin/python3 /home/aios/pi_camera_stream.py --mode face
+ExecStart=/usr/bin/python3 /home/aios/pi_camera_stream.py
+Restart=on-failure
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
